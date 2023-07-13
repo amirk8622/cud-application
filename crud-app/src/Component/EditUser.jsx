@@ -26,7 +26,7 @@ const EditUser = () => {
 
     useEffect(() => {
         loadUserDetails();
-    }, []);
+    },);
 
     const loadUserDetails = async() => {
         const response = await getUsers(id);
