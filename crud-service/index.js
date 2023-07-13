@@ -20,11 +20,11 @@ app.use(cors());
 
 app.use('/', Routes);
 
-const USERNAME = process.env.DB_USERNAME;
-const PASSWORD = process.env.DB_PASSWORD;
+const username = process.env.DB_USERNAME;
+const password = process.env.DB_PASSWORD;
 
 const PORT = '8080';
 
-Connection(USERNAME, PASSWORD);
+Connection(username, password);
  
 app.listen(PORT, () => console.log(`Server is running successfully on PORT ${PORT}`));
